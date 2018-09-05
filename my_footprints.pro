@@ -1,4 +1,4 @@
-update=mié 05 sep 2018 01:15:01 -03
+update=mié 05 sep 2018 16:48:32 -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,4 +61,7 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=symbols/dispositivos/acc_mu6050/acc_mpu6050_chip
+LibName33=symbols/zigbee/dk_RF-Transceiver-Modules
+LibName34=symbols/lpcxpresso_lpc1769/lpcxpresso_lpc1769_revb
+LibName35=symbols/lpcxpresso_lpc1769/lpcxpresso_lpc1769_revd
+LibName36=symbols/lpcxpresso_lpc1769/lpcxpresso_lpc1769_revd_v2
