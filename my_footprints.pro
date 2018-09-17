@@ -1,4 +1,4 @@
-update=mié 05 sep 2018 16:48:32 -03
+update=dom 16 sep 2018 23:03:58 -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -64,4 +64,5 @@ LibName32=valves
 LibName33=symbols/zigbee/dk_RF-Transceiver-Modules
 LibName34=symbols/lpcxpresso_lpc1769/lpcxpresso_lpc1769_revb
 LibName35=symbols/lpcxpresso_lpc1769/lpcxpresso_lpc1769_revd
-LibName36=symbols/lpcxpresso_lpc1769/lpcxpresso_lpc1769_revd_v2
+LibName36=symbols/acc_mpu9250/acc_mpu9250_board
+LibName37=symbols/sensor_motions/Sensor_Motion

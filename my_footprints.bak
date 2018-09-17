@@ -31,7 +31,11 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:acc_mpu6050_chip
+LIBS:dk_RF-Transceiver-Modules
+LIBS:lpcxpresso_lpc1769_revb
+LIBS:lpcxpresso_lpc1769_revd
+LIBS:acc_mpu9250_board
+LIBS:my_footprints-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -47,62 +51,68 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Conn_02x10_Counter_Clockwise J1
-U 1 1 5B902520
-P 5800 2400
-F 0 "J1" H 5850 2900 50  0000 C CNN
-F 1 "Conn_02x10_Counter_Clockwise" H 5850 1800 50  0000 C CNN
-F 2 "footprints:xbee_xb24cz7pit_004" H 5800 2400 50  0001 C CNN
-F 3 "" H 5800 2400 50  0001 C CNN
-	1    5800 2400
+L acc_mpu9250_board U?
+U 1 1 5B9DBE51
+P 6200 2950
+F 0 "U?" H 6800 3150 60  0000 C CNN
+F 1 "acc_mpu9250_board" H 6500 3050 60  0000 C CNN
+F 2 "" H 6200 2950 60  0001 C CNN
+F 3 "" H 6200 2950 60  0001 C CNN
+	1    6200 2950
 	1    0    0    -1  
 $EndComp
+Text Notes 4100 3700 0    60   ~ 0
+a pin GPIO\n
 $Comp
-L R R1
-U 1 1 5B902550
-P 4800 2150
-F 0 "R1" V 4880 2150 50  0000 C CNN
-F 1 "R" V 4800 2150 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Vertical" V 4730 2150 50  0001 C CNN
-F 3 "" H 4800 2150 50  0001 C CNN
-	1    4800 2150
+L +5V #PWR?
+U 1 1 5B9DC034
+P 5600 2650
+F 0 "#PWR?" H 5600 2500 50  0001 C CNN
+F 1 "+5V" H 5600 2790 50  0000 C CNN
+F 2 "" H 5600 2650 50  0001 C CNN
+F 3 "" H 5600 2650 50  0001 C CNN
+	1    5600 2650
 	1    0    0    -1  
 $EndComp
+Text Notes 5750 2550 0    60   ~ 0
+Ya se incorpora un reg 3v3
 $Comp
-L GND #PWR01
-U 1 1 5B90263B
-P 4800 2300
-F 0 "#PWR01" H 4800 2050 50  0001 C CNN
-F 1 "GND" H 4800 2150 50  0000 C CNN
-F 2 "" H 4800 2300 50  0001 C CNN
-F 3 "" H 4800 2300 50  0001 C CNN
-	1    4800 2300
+L GND #PWR?
+U 1 1 5B9DC083
+P 4950 2950
+F 0 "#PWR?" H 4950 2700 50  0001 C CNN
+F 1 "GND" H 4950 2800 50  0000 C CNN
+F 2 "" H 4950 2950 50  0001 C CNN
+F 3 "" H 4950 2950 50  0001 C CNN
+	1    4950 2950
 	1    0    0    -1  
 $EndComp
-$Comp
-L CP C1
-U 1 1 5B90265D
-P 6700 2750
-F 0 "C1" H 6725 2850 50  0000 L CNN
-F 1 "CP" H 6725 2650 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Axial_L29.0mm_D20.0mm_P35.00mm_Horizontal" H 6738 2600 50  0001 C CNN
-F 3 "" H 6700 2750 50  0001 C CNN
-	1    6700 2750
-	1    0    0    -1  
-$EndComp
+Text Notes 3400 3250 0    60   ~ 0
+a scl, ya tiene pull up
+Text Notes 3350 3350 0    60   ~ 0
+a sda, ya tiene pull up\n
 Wire Wire Line
-	6700 2600 6100 2600
+	6000 3750 4450 3750
 Wire Wire Line
-	4800 2000 5600 2000
-$Comp
-L GND #PWR02
-U 1 1 5B902690
-P 6700 2900
-F 0 "#PWR02" H 6700 2650 50  0001 C CNN
-F 1 "GND" H 6700 2750 50  0000 C CNN
-F 2 "" H 6700 2900 50  0001 C CNN
-F 3 "" H 6700 2900 50  0001 C CNN
-	1    6700 2900
-	1    0    0    -1  
-$EndComp
+	5600 2650 5600 3050
+Wire Wire Line
+	5600 3050 6000 3050
+Wire Wire Line
+	5150 3150 5150 2950
+Wire Wire Line
+	5150 2950 4950 2950
+Wire Wire Line
+	4500 3250 6000 3250
+Wire Wire Line
+	5150 3150 6000 3150
+Wire Wire Line
+	6000 3350 4500 3350
+Wire Wire Line
+	6000 3650 5100 3650
+Text Notes 4200 3600 0    60   ~ 0
+direccion del esclavo
+NoConn ~ 6000 3450
+NoConn ~ 6000 3550
+Text Notes 2550 3500 0    60   ~ 0
+No conectar si no se usa para comunicarse con sensores fuera del chip
 $EndSCHEMATC
