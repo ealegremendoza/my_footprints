@@ -35,6 +35,7 @@ LIBS:dk_RF-Transceiver-Modules
 LIBS:lpcxpresso_lpc1769_revb
 LIBS:lpcxpresso_lpc1769_revd
 LIBS:acc_mpu9250_board
+LIBS:Sensor_Motion
 LIBS:my_footprints-cache
 EELAYER 25 0
 EELAYER END
