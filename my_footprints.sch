@@ -51,4 +51,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L acc_mpu9250_board U1
+U 1 1 5BA1AFBA
+P 6150 2950
+F 0 "U1" H 6750 3150 60  0000 C CNN
+F 1 "acc_mpu9250_board" H 6450 3050 60  0000 C CNN
+F 2 "footprints:mpu9250_board" H 6150 2950 60  0001 C CNN
+F 3 "" H 6150 2950 60  0001 C CNN
+	1    6150 2950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
