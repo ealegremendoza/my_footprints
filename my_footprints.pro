@@ -1,4 +1,4 @@
-update=dom 16 sep 2018 23:03:58 -03
+update=vie 28 sep 2018 15:59:59 -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -66,3 +66,4 @@ LibName34=symbols/lpcxpresso_lpc1769/lpcxpresso_lpc1769_revb
 LibName35=symbols/lpcxpresso_lpc1769/lpcxpresso_lpc1769_revd
 LibName36=symbols/acc_mpu9250/acc_mpu9250_board
 LibName37=symbols/sensor_motions/Sensor_Motion
+LibName38=arduino-kicad-library-master/arduino
